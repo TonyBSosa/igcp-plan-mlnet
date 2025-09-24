@@ -82,3 +82,4 @@ F:\SGBD\igcp-plan-mlnet\ml\IGCP.ML\obj\Debug\net7.0\refint\IGCP.ML.dll
 F:\SGBD\igcp-plan-mlnet\ml\IGCP.ML\obj\Debug\net7.0\IGCP.ML.pdb
 F:\SGBD\igcp-plan-mlnet\ml\IGCP.ML\obj\Debug\net7.0\IGCP.ML.genruntimeconfig.cache
 F:\SGBD\igcp-plan-mlnet\ml\IGCP.ML\obj\Debug\net7.0\ref\IGCP.ML.dll
+F:\SGBD\igcp-plan-mlnet\ml\IGCP.ML\obj\Debug\net7.0\IGCP.ML.sourcelink.json

@@ -44,6 +44,35 @@
           }
         }
       },
+      "ExcelDataReader/3.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "ExcelDataReader.DataSet/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ExcelDataReader": "3.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/9.0.9": {
         "type": "package",
         "compile": {
@@ -719,6 +748,51 @@
           }
         }
       },
+      "Microsoft.ML.FastTree/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ML": "4.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.ML.FastTree.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libFastTreeNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libFastTreeNative.so.dbg": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libFastTreeNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libFastTreeNative.dylib.dwarf": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
@@ -1310,6 +1384,56 @@
         "lib/net8.0/Azure.Identity.xml",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "ExcelDataReader/3.8.0": {
+      "sha512": "kbUsldc5Fn9IKgzL2nr4VvN/mKqPqn8zGXUZpA7uL6svCA4psF+qMK519EhMvderpU4pAJoqk9DWpiSIkiZtXA==",
+      "type": "package",
+      "path": "exceldatareader/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.3.8.0.nupkg.sha512",
+        "exceldatareader.nuspec",
+        "lib/net462/ExcelDataReader.dll",
+        "lib/net462/ExcelDataReader.pdb",
+        "lib/net462/ExcelDataReader.xml",
+        "lib/net8.0/ExcelDataReader.dll",
+        "lib/net8.0/ExcelDataReader.pdb",
+        "lib/net8.0/ExcelDataReader.xml",
+        "lib/netstandard2.0/ExcelDataReader.dll",
+        "lib/netstandard2.0/ExcelDataReader.pdb",
+        "lib/netstandard2.0/ExcelDataReader.xml",
+        "lib/netstandard2.1/ExcelDataReader.dll",
+        "lib/netstandard2.1/ExcelDataReader.pdb",
+        "lib/netstandard2.1/ExcelDataReader.xml"
+      ]
+    },
+    "ExcelDataReader.DataSet/3.8.0": {
+      "sha512": "+eQg5oinHir7ayE/rF4dedvy8J6FBDG8RDyKFQsS/VZG9ygrnNgW6U8JSlrfGfe3DxYgbVoVwYV9Hbk63JQJFQ==",
+      "type": "package",
+      "path": "exceldatareader.dataset/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.dataset.3.8.0.nupkg.sha512",
+        "exceldatareader.dataset.nuspec",
+        "lib/net462/ExcelDataReader.DataSet.dll",
+        "lib/net462/ExcelDataReader.DataSet.pdb",
+        "lib/net462/ExcelDataReader.DataSet.xml",
+        "lib/net8.0/ExcelDataReader.DataSet.dll",
+        "lib/net8.0/ExcelDataReader.DataSet.pdb",
+        "lib/net8.0/ExcelDataReader.DataSet.xml",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.xml",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/9.0.9": {
@@ -2183,6 +2307,30 @@
         "microsoft.ml.dataview.4.0.2.nupkg.sha512",
         "microsoft.ml.dataview.nuspec",
         "mlnetlogo.png"
+      ]
+    },
+    "Microsoft.ML.FastTree/4.0.2": {
+      "sha512": "a/1kEgAqGakxE5DZCh9Xk4XJeyjaowUV4JpgZW6LJAQvufRp/4ZHAUDXJE4T1sOHoFzWsmPeBqDAlzlAgKH6Eg==",
+      "type": "package",
+      "path": "microsoft.ml.fasttree/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/netstandard2.0/Microsoft.ML.FastTree.props",
+        "lib/netstandard2.0/Microsoft.ML.FastTree.dll",
+        "lib/netstandard2.0/Microsoft.ML.FastTree.xml",
+        "microsoft.ml.fasttree.4.0.2.nupkg.sha512",
+        "microsoft.ml.fasttree.nuspec",
+        "mlnetlogo.png",
+        "runtimes/linux-x64/native/libFastTreeNative.so",
+        "runtimes/linux-x64/native/libFastTreeNative.so.dbg",
+        "runtimes/osx-x64/native/libFastTreeNative.dylib",
+        "runtimes/osx-x64/native/libFastTreeNative.dylib.dwarf",
+        "runtimes/win-x64/native/FastTreeNative.dll",
+        "runtimes/win-x86/native/FastTreeNative.dll"
       ]
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
@@ -3359,15 +3507,18 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ExcelDataReader.DataSet >= 3.8.0",
       "Microsoft.Data.SqlClient >= 6.1.1",
       "Microsoft.Extensions.Configuration >= 9.0.9",
       "Microsoft.Extensions.Configuration.UserSecrets >= 9.0.9",
       "Microsoft.ML >= 4.0.2",
+      "Microsoft.ML.FastTree >= 4.0.2",
       "System.Data.SqlClient >= 4.9.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tony Sosa\\.nuget\\packages\\": {}
+    "C:\\Users\\Tony Sosa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3378,8 +3529,12 @@
       "packagesPath": "C:\\Users\\Tony Sosa\\.nuget\\packages\\",
       "outputPath": "F:\\SGBD\\igcp-plan-mlnet\\ml\\IGCP.ML\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Tony Sosa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3404,12 +3559,17 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "ExcelDataReader.DataSet": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[6.1.1, )"
@@ -3423,6 +3583,10 @@
             "version": "[9.0.9, )"
           },
           "Microsoft.ML": {
+            "target": "Package",
+            "version": "[4.0.2, )"
+          },
+          "Microsoft.ML.FastTree": {
             "target": "Package",
             "version": "[4.0.2, )"
           },
@@ -3442,30 +3606,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
