@@ -2,21 +2,21 @@
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
-using System.Data.SqlClient;               // proveedor SQL estable
+using System.Data.SqlClient;               
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.Extensions.Configuration;
 
 // =================== Config y cadena de conexión ===================
 var cfg = new ConfigurationBuilder()
-    .AddUserSecrets<Program>()  // lee "ConnStr" guardado con user-secrets
+    .AddUserSecrets<Program>()  
     .Build();
 
 // 3 fuentes: UserSecrets -> ConnectionStrings -> variable de entorno
 string? conn =
-    cfg["ConnStr"]                                   // 1) user-secrets
-    ?? cfg.GetConnectionString("DefaultConnection")  // 2) appsettings (opcional)
-    ?? Environment.GetEnvironmentVariable("CONNSTR");// 3) env var (opcional)
+    cfg["ConnStr"]                                    
+    ?? cfg.GetConnectionString("DefaultConnection")   
+    ?? Environment.GetEnvironmentVariable("CONNSTR"); 
 
 if (string.IsNullOrWhiteSpace(conn))
 {
@@ -31,7 +31,7 @@ Console.WriteLine($"[INFO] ConnStr OK (len={conn.Length})");
 try
 {
     using var test = new SqlConnection(conn);
-    test.Open(); // síncrono
+    test.Open();  
     Console.WriteLine("[INFO] Conexión a SQL OK");
 }
 catch (SqlException ex)
@@ -61,7 +61,7 @@ using (var cn = new SqlConnection(conn))
                 car_codigo = rd.GetString(0),
                 mat_codigo = rd.GetString(1),
                 semestre   = rd.IsDBNull(2) ? 0 : rd.GetInt32(2),
-                modulo     = rd.IsDBNull(3) ? "" : rd.GetString(3)   // nunca null
+                modulo     = rd.IsDBNull(3) ? "" : rd.GetString(3)    
             });
         }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IGCP.ML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2f72ca6f53e06824874e12c887b6e24e9a3df5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("IGCP.ML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IGCP.ML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
