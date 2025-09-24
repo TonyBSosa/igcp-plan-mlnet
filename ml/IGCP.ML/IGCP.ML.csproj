@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>   <!-- Actualizado: adiós NETSDK1138 -->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UserSecretsId>db3d2c4b-90b7-44d4-900e-be679e2c0ed8</UserSecretsId>
+    <UseAppHost>false</UseAppHost>              <!-- Build/Run más rápido -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +16,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.9" />
     <PackageReference Include="Microsoft.ML" Version="4.0.2" />
     <PackageReference Include="Microsoft.ML.FastTree" Version="4.0.2" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <!-- QUITADO: System.Data.SqlClient (evita conflictos con Microsoft.Data.SqlClient) -->
   </ItemGroup>
 
 </Project>
